@@ -55,3 +55,7 @@ function displayData(loopCount, json) {
 }
 
 
+function clear() {
+    $("searchResultHeader").empty();
+  }
+  
