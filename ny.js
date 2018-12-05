@@ -13,6 +13,7 @@ nyDataForm.addEventListener('submit', function (e) {
     // param1 string search term
     // param2 number how many data
     getData(inputVal.value, numOfData.value)
+
 })
 
 function getData(searchTerm, count) {
@@ -37,6 +38,7 @@ function getData(searchTerm, count) {
         }
         )
         .catch(err => console.log(err))
+        
 
 }
 
@@ -56,6 +58,7 @@ function displayData(loopCount, json) {
 
 
 function clear() {
-    $("searchResultHeader").empty();
-  }
-  
+    $("#searchResult").empty();
+}
+
+$("#clear").on("click", clear);
